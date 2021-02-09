@@ -1,0 +1,16 @@
+/* global reset;  box-sizing is set on body and set to inherit on all other elements */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    /* 62.5% of the browser supplied font-size is usually 16px */
+    /* bad practice to declarer px font-size here as it removes users ability to set font-size in browser */
+    font-size: 62.5%;
+    // font-size:  1.0538vmin;
+}
+/* everything related to font goes in body */
+body {
+    box-sizing: border-box;
+}
