@@ -4,7 +4,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: $color-grey-dark;
-    padding: 3rem;
+    padding: $default-font-size * 2;
 }
 .headingPrimary{
     position: absolute;
@@ -17,16 +17,46 @@ body {
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: $default-font-size * 4;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: $default-font-size * 2;
         animation: moveInLeft 1s ease-out;
     }
     &--sub {
         display: block;
-        font-size: 3rem;
+        font-size: $default-font-size * 2;
         font-weight: 700;
-        letter-spacing: 1.18rem;
+        letter-spacing: $default-font-size * .6562;
         animation: moveInRight 1s ease-out;
+    }
+}
+
+.headingSecondary {
+    font-size: $default-font-size * 2;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: transform .2s;
+    letter-spacing: .2rem;
+
+    &:hover {
+        transform: skewY(-8deg) skewX(-10deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+.heading-tertiary {
+    font-size: $default-font-size * 1.25;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child) {
+        margin-bottom: $default-font-size * 2;
     }
 }

@@ -1,0 +1,3 @@
+@function getRowWidth($percent, $colCount) {
+    @return calc(($percent - ($colCount - 1) * #{$gutter-horizontal}) / $colCount);
+}

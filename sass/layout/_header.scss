@@ -44,14 +44,14 @@
 
     &__logoBox {
         position: absolute;
-        left: 4rem;
-        top: 4rem;
+        left: $default-font-size * 2;
+        top: $default-font-size * 2;
     }
     &__logo {
-        height: 3.5rem;
+        height: $default-font-size * 2;
     }
     &__textBox {
-        margin-top: 2rem;
+        margin-top: $default-font-size * 2;
         position: absolute;
         top: 50%;
         left: 50%;
