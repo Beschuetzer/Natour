@@ -484,6 +484,14 @@ body {
   filter: blur(0.4rem) brightness(0.33) sepia(0.66);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+}
+
 .header {
   position: relative;
   height: 95vh;
