@@ -1,0 +1,112 @@
+.card {
+    //FUNCTIONALITY
+    perspective: 250rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &__side{  
+    overflow: hidden;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: orangered;
+        height: 50rem;
+        width: 100%;
+        font-size: $default-font-size;
+        transition: transform .85s ease;
+        -webkit-transition: transform .85s ease;
+        -moz-transition: transform .85s ease;
+        -o-transition: transform .85s ease;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        box-shadow: 0 $default-font-size 2 * $default-font-size rgba($color-black, .15);
+
+        &--front {
+            background-color: yellow;
+            &-1{
+
+            }
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+        }
+
+        &--back {
+            background-color: green;
+            transform: rotateY(-180deg);
+            &-1{
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            }
+           
+            &-2{
+
+            }
+            &-3{
+
+            }
+        }
+        
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    //FRONT-SIDE STYLING
+    &__picture {
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: screen;
+        height: 50%;
+
+        &--1 {
+            background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg');
+            -webkit-clip-path: polygon(
+                0 0,
+                100% 0,
+                100% 95%,
+                0 100%
+            );
+            clip-path: polygon(
+                0 0,
+                100% 0,
+                100% 95%,
+                0 100%
+            );
+        }
+        &--2 {
+            background-image: url('../img/nat-5.jpg');
+        }
+        &--3 {
+            background-image: url('../img/nat-5.jpg');
+        }
+    }   
+
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        bottom: 50%;
+        right: 1.9rem;
+        width: 39%;
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));    
+        }
+    }
+}
