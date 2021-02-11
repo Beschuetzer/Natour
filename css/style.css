@@ -279,7 +279,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: orangered;
   height: 50rem;
   width: 100%;
   font-size: 1.6rem;
@@ -291,17 +290,7 @@ body {
   border-radius: 0.3rem;
   box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.15);
 }
-.card__side--front {
-  background-color: yellow;
-}
-.card__side--front-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
-}
-.card__side--front-3 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
-}
 .card__side--back {
-  background-color: green;
   transform: rotateY(-180deg);
 }
 .card__side--back-1 {
@@ -367,6 +356,25 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.card__cta {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card__price-box {
+  color: #fff;
+}
+.card__price-only {
+  font-size: 3.2rem;
+}
+.card__price-value {
+  font-size: 6.4rem;
+  font-weight: 100;
+  margin-bottom: 6.4rem;
 }
 
 .header {
