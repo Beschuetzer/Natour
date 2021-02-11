@@ -43,9 +43,11 @@
             }
            
             &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
             }
             &-3{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
 
             }
         }
@@ -66,8 +68,7 @@
         background-blend-mode: screen;
         height: 50%;
 
-        &--1 {
-            background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg');
+        &--1, &--2, &--3 {
             -webkit-clip-path: polygon(
                 0 0,
                 100% 0,
@@ -81,11 +82,15 @@
                 0 100%
             );
         }
+
+        &--1 {
+            background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg');
+        }
         &--2 {
-            background-image: url('../img/nat-5.jpg');
+            background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../img/nat-6.jpg');
         }
         &--3 {
-            background-image: url('../img/nat-5.jpg');
+            background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('../img/nat-7.jpg');
         }
     }   
 
@@ -96,8 +101,18 @@
         color: #fff;
         position: absolute;
         bottom: 50%;
-        right: 1.9rem;
-        width: 39%;
+        right: 0rem;
+        
+
+        &--1 {
+            width: 44.5%;
+        }
+        &--2 {
+            width: 51.5%;
+        }
+        &--3 {
+            width: 55.8%;
+        }
     }
 
     &__heading-span {
@@ -106,6 +121,12 @@
         box-decoration-break: clone;
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));    
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));    
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));    
         }
     }
 
