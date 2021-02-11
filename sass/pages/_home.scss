@@ -17,10 +17,10 @@
     background-position: top;
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
     padding: $default-font-size * 12 0;
-        transform: skewY(-8deg);
+        transform: skewY(-$skew-amount);
 
     & > * {
-        transform: skewY(8deg);
+        transform: skewY($skew-amount);
     }
   
 }
@@ -29,4 +29,9 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0 .01rem 0;
     margin-top: -15.4rem;
+}
+
+.section-stories {
+    padding: 15rem 0;
+    background-color: $color-grey-light-1;
 }

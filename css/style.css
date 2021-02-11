@@ -102,7 +102,7 @@ body {
   letter-spacing: 0.2rem;
 }
 .headingSecondary:hover {
-  transform: skewY(-8deg) skewX(-10deg);
+  transform: skewY(-7.2deg) skewX(-7.2deg);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -425,6 +425,34 @@ body {
   margin-bottom: 6.4rem;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 6.4rem;
+  padding-left: 9.6rem;
+  font-size: 1.6rem;
+  transform: skewX(-7.2deg);
+}
+.story__shape {
+  height: 15rem;
+  width: 15rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  transform: translate(-3.2rem, 0) skewX(7.2deg);
+}
+.story__image {
+  height: 100%;
+}
+.story__text {
+  transform: skewX(7.2deg);
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -534,16 +562,21 @@ body {
   background-size: cover;
   background-position: top;
   padding: 19.2rem 0;
-  transform: skewY(-8deg);
+  transform: skewY(-7.2deg);
 }
 .section-features > * {
-  transform: skewY(8deg);
+  transform: skewY(7.2deg);
 }
 
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 0.01rem 0;
   margin-top: -15.4rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */
