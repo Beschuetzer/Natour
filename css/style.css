@@ -124,7 +124,7 @@ body {
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .u-margin-bottom-medium {
@@ -133,6 +133,26 @@ body {
 
 .u-margin-bottom-large {
   margin-bottom: 8rem;
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 9.6rem;
+}
+
+.u-margin-top-small {
+  margin-top: 1.6rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
+.u-margin-top-large {
+  margin-top: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 9.6rem;
 }
 
 .btn:link, .btn:visited {
@@ -178,10 +198,16 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
-  margin-top: 2rem;
 }
 .btn--white::after {
   background-color: #fff;
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn--animated {
   animation: moveInButton 1s ease-out;
@@ -287,7 +313,7 @@ body {
   -moz-transition: transform 0.85s ease;
   -o-transition: transform 0.85s ease;
   backface-visibility: hidden;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.15);
 }
 .card__side--back {
@@ -516,7 +542,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 0.01rem 0;
   margin-top: -15.4rem;
 }
 

@@ -42,9 +42,17 @@
     &--white {
         background-color: $color-white;
         color: $color-grey-dark;
-        margin-top: 2rem;
+        // margin-top: 2rem;
         &::after {
             background-color: $color-white;
+        }
+    }
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        // margin-top: 2rem;
+        &::after {
+            background-color: $color-primary;
         }
     }
     &--animated {
