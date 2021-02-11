@@ -11,6 +11,8 @@
     transform: skewX(-$skew-amount);
 
     &__shape {
+        position: relative;
+        text-align: center;
         height: 15rem;
         width: 15rem;
         float:left;
@@ -18,19 +20,52 @@
         shape-outside: circle(50% at 50% 50%);
 
         -webkit-clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
+
         clip-path: circle(50% at 50% 50%);
         transform: translate(-2 * $default-font-size , 0) skewX($skew-amount);
-        // background-position: left;
-        // background-size: cover;
       
     }
 
     &__image {
         height: 100%;
-      
+        transform: translateX(-$default-font-size * $story-img-translate-factor) scale($story-scale);
+        backface-visibility: hidden;
+        transition: transform .5s $story-transition;
+        -webkit-transition: transform .5s $story-transition;
+        -moz-transition: transform .5s $story-transition;
+        -o-transition: transform .5s $story-transition;
     }
 
     &__text {
         transform: skewX($skew-amount);
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        opacity: 0;
+        color: $color-white;
+        text-transform: uppercase;
+        backface-visibility: hidden;
+
+        transition: transform .5s, opacity .5s $story-transition;
+        -webkit-transition: transform .5s, opacity .5s $story-transition;
+        -moz-transition: transform .5s, opacity .5s $story-transition;
+        -o-transition: transform .5s, opacity .5s $story-transition;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &:hover &__image {
+        transform: translateX(-$default-font-size * $story-img-translate-factor) scale(1);
+        filter: blur($default-font-size / 4) brightness(.33) sepia(.66);
+
     }
 }
