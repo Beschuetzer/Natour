@@ -490,7 +490,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1000;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 .header {

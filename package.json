@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/pages/home.scss css/home.css --watch"
+    "compile:sass": "sass sass/pages/_home.scss css/home.css --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "url": "https://github.com/Beschuetzer/Natour/issues"
   },
   "homepage": "https://github.com/Beschuetzer/Natour#readme",
-  "devDependencies": {
+  "dependencies": {
     "sass": "^1.32.7"
   }
 }
