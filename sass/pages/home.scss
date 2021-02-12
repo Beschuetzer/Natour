@@ -1,3 +1,19 @@
+@import "../abstracts/functions";
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../base/animations";
+@import "../base/base";
+@import "../base/typography";
+@import "../base/utilities";
+@import "../components/buttons";
+@import "../components/composition";
+@import "../components/feature-box";
+@import "../components/card";
+@import "../components/story";
+@import "../components/bg-video";
+@import "../layout/header";
+@import "../layout/grid";
+
 .sectionAbout{
     background-color: $color-grey-light-1;
     padding: 25rem 0;
@@ -5,6 +21,8 @@
 }
 
 .section-features {
+    display: grid;
+    place-content: center;
     margin-top: -14.4rem;
     position: relative;
     height: 95vh;
@@ -32,6 +50,7 @@
 }
 
 .section-stories {
-    padding: 15rem 0;
-    background-color: $color-grey-light-1;
+    padding: $default-font-size * 5 0;
+    position: relative;
+    overflow: hidden;
 }

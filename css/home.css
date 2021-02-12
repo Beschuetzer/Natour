@@ -269,7 +269,6 @@ body {
 }
 
 .feature-box {
-  margin-top: 10rem;
   background-color: rgba(255, 255, 255, 0.75);
   font-size: 1.6rem;
   padding: 2.4rem;
@@ -490,6 +489,8 @@ body {
   left: 0%;
   height: 100%;
   width: 100%;
+  z-index: -1000;
+  opacity: 0.5;
 }
 
 .header {
@@ -594,6 +595,8 @@ body {
 }
 
 .section-features {
+  display: grid;
+  place-content: center;
   margin-top: -14.4rem;
   position: relative;
   height: 95vh;
@@ -614,8 +617,9 @@ body {
 }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7;
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=home.css.map */
