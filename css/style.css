@@ -625,4 +625,28 @@ body {
   overflow: hidden;
 }
 
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.book {
+  position: relative;
+  background-image: url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3);
+  height: 50rem;
+}
+
+.book__solid-gradient {
+  background-color: white;
+  clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
