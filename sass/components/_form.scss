@@ -1,0 +1,58 @@
+.form {
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: $default-font-size;
+        }
+    }
+    &__input {
+        font-size: $default-font-size;
+        padding: $default-font-size 1.5 * $default-font-size;
+        border-radius: $border-radius;
+        background-color: rgba($color-white, .75);
+        border: none;
+        color: inherit;
+        font-family: inherit;
+        border-bottom: $border-radius solid transparent;
+        display: block;
+        width: 100%;
+
+        &:focus {
+            // border-color: transparent;
+            outline: none;
+            box-shadow: 0 .5 * $default-font-size $default-font-size * 1 rgba($color-black, .1);
+            border-bottom: $border-radius solid $color-primary;
+
+            &:invalid {
+                color: $color-secondary-dark;
+                border-bottom: $border-radius solid $color-secondary-dark;
+            }
+            &:valid {
+                color: $color-primary;
+                border-bottom: $border-radius solid $color-primary;
+            }
+        }
+        &::-webkit-input-placeholder {
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__label {
+        // opacity: 0;
+        display: block;
+        font-size: .75 * $default-font-size;
+        font-weight: 700;
+        margin-left: $default-font-size * 1.5;
+        margin-top: .5 * $default-font-size;
+
+        transition: all .33s ease;
+        -webkit-transition: all .33s ease;
+        -moz-transition: all .33s ease;
+        -o-transition: all .33s ease;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-$default-font-size * 2.825) translateX($default-font-size * 3.33) scaleX(1.25);
+    }
+}

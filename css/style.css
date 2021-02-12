@@ -155,6 +155,18 @@ body {
   margin-top: 9.6rem;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 .btn:link, .btn:visited {
   font-size: 1.6rem;
   position: relative;
@@ -497,6 +509,54 @@ body {
   object-fit: cover;
 }
 
+.form__group:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+.form__input {
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  border-bottom: 0.3rem solid transparent;
+  display: block;
+  width: 100%;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-bottom: 0.3rem solid #55c57a;
+}
+.form__input:focus:invalid {
+  color: #ff7730;
+  border-bottom: 0.3rem solid #ff7730;
+}
+.form__input:focus:valid {
+  color: #55c57a;
+  border-bottom: 0.3rem solid #55c57a;
+}
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+.form__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2.4rem;
+  margin-top: 0.8rem;
+  transition: all 0.33s ease;
+  -webkit-transition: all 0.33s ease;
+  -moz-transition: all 0.33s ease;
+  -o-transition: all 0.33s ease;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4.52rem) translateX(5.328rem) scaleX(1.25);
+}
+
 .header {
   position: relative;
   height: 95vh;
@@ -625,12 +685,12 @@ body {
   overflow: hidden;
 }
 
-.section-book {
+.section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 
-.book {
+.booking {
   position: relative;
   background-image: url(../img/nat-10.jpg);
   background-size: cover;
@@ -638,15 +698,19 @@ body {
   box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3);
   height: 50rem;
 }
-
-.book__solid-gradient {
-  background-color: white;
+.booking__form {
+  width: 50%;
+  height: 100%;
+  padding: 6rem;
+}
+.booking__solid-gradient {
   clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 /*# sourceMappingURL=style.css.map */
