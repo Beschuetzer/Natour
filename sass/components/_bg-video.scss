@@ -5,4 +5,10 @@
     top: 0;
     left: 0;
     opacity: .075;
+
+    & video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
