@@ -12,3 +12,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin navTransitionBackground {
+    transition: transform .8s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -webkit-transition: transform .8s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -moz-transition: transform .8s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -o-transition: transform .8s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+}
+@mixin navTransitionButton {
+    transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -webkit-transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -moz-transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+    -o-transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.83, 0, 0.17, 1);
+}
