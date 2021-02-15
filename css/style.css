@@ -478,7 +478,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   color: #fff;
   text-transform: uppercase;
@@ -589,15 +589,15 @@ body {
   border-radius: 50%;
 }
 .form__radio-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 1rem;
   width: 1rem;
   content: "";
   display: block;
   border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: #55c57a;
   opacity: 0;
   transition: opacity 0.66s ease;
@@ -752,6 +752,77 @@ body {
   padding-top: 1.6rem;
   float: right;
   width: 72%;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+.navigation__button {
+  background-color: #fff;
+  height: 6.4rem;
+  width: 6.4rem;
+  position: fixed;
+  top: 6.4rem;
+  right: 4.8rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1009;
+}
+.navigation__background {
+  background-color: #55c57a;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.4rem;
+  right: 6.4rem;
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000;
+  transform: scale(100);
+}
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1005;
+}
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+}
+.navigation__item {
+  margin: 1rem;
+}
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: linear-gradient(104.4deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 215%;
+  transition: background-position 0.5s, color 0.5s, transform 0.25s ease;
+  -webkit-transition: background-position 0.5s, color 0.5s, transform 0.25s ease;
+  -moz-transition: background-position 0.5s, color 0.5s, transform 0.25s ease;
+  -o-transition: background-position 0.5s, color 0.5s, transform 0.25s ease;
+}
+.navigation__link:link:hover, .navigation__link:link:active, .navigation__link:visited:hover, .navigation__link:visited:active {
+  background-position: 100%;
+  color: #55c57a;
+  transform: translateX(0.8rem);
+}
+.navigation__link:link span, .navigation__link:visited span {
+  display: inline-block;
+  margin-right: 1.6rem;
 }
 
 .sectionAbout {

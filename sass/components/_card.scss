@@ -4,8 +4,6 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
-    // background-color: $color-white;
-    // color: $color-white;
 
     &__side{  
     overflow: hidden;
@@ -23,18 +21,6 @@
         backface-visibility: hidden;
         border-radius: 1rem;
         box-shadow: 0 $default-font-size 2 * $default-font-size rgba($color-black, .15);
-
-        &--front {
-            // &-1{
-
-            // }
-            // &-2{
-            //     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-            // }
-            // &-3{
-            //     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-            // }
-        }
 
         &--back {
             transform: rotateY(-180deg);
