@@ -25,3 +25,30 @@
     -moz-transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     -o-transition: transform .6s, width .8s, opacity .8s, box-shadow .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+
+
+//Media Query Manager
+//breakpoints: 
+//0-600 (phone)
+//600-900 (tablet-portrait)
+//900-1200 (tablet-landscape)
+//1200-1800 (desktop)
+//1800+ (big desktop)
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em){@content;}   //600px
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em){@content;}  //900px
+        
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em){@content;}       //1200px
+        
+    }
+    @if $breakpoint == big-desktop{
+        @media (min-width: 112.5em){@content;}      //1800px
+        
+    }
+}
