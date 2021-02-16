@@ -7,7 +7,7 @@
 .u-margin-top-small {
     margin-top: $default-font-size !important;
     @include respond(tab-port) {
-        margin-top: $default-font-size / 2 !important;
+        margin-top: $default-font-size !important;
     }
 }
 .u-margin-top-medium {

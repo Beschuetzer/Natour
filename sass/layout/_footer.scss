@@ -1,12 +1,22 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: $default-font-size * 5 0;
+    padding: $default-font-size * 3.75 $default-font-size * 2.5;
+    @include respond(tab-port) {
+        padding: $default-font-size * 2.5 0;   
+    }
+
     font-size: $default-font-size * .9;
     color: $color-white;
 
     &__logo-box {
-        text-align: center;
-        margin-bottom: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+        margin-bottom: $default-font-size * 3.75;
+        @include respond(tab-port) {
+            margin-bottom: $default-font-size * 2;
+        }
     }
     &__logo {
         width: $default-font-size * 8;

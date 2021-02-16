@@ -179,7 +179,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .u-margin-top-small {
-    margin-top: 0.8rem !important;
+    margin-top: 1.6rem !important;
   }
 }
 
@@ -236,17 +236,6 @@ body {
   -o-transition: box-shadow 0.2s, transform 0.2s ease;
   border: none;
   cursor: pointer;
-}
-@media (max-width: 37.5em) {
-  .btn, .btn:link, .btn:visited {
-    font-size: 3.2rem;
-    height: 12.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6.4rem;
-    padding: 1.6rem 4.2rem;
-  }
 }
 .btn:hover {
   transform: translateY(-0.25rem);
@@ -318,12 +307,22 @@ body {
 .composition {
   position: relative;
 }
+@media (max-width: 56.25em) {
+  .composition {
+    height: 25rem;
+  }
+}
 .composition__photo {
   width: 52.5%;
-  box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.33);
   position: absolute;
   z-index: 10;
   transition: transform 0.2s;
+}
+@media (max-width: 56.25em) {
+  .composition__photo {
+    width: 45%;
+  }
 }
 .composition__photo:hover {
   transform: scale(1.075) translateY(-0.5333333333rem);
@@ -332,17 +331,38 @@ body {
   outline: 1.6rem solid #7ed56f;
   outline-offset: 1.6rem;
 }
+@media (max-width: 56.25em) {
+  .composition__photo:hover {
+    transform: scale(1.6125) translateY(-0.5333333333rem);
+  }
+}
 .composition__photo--p1 {
   top: 0.8rem;
   left: 0;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p1 {
+    top: 0;
+  }
 }
 .composition__photo--p2 {
   top: 8rem;
   right: 0%;
 }
+@media (max-width: 56.25em) {
+  .composition__photo--p2 {
+    top: 0;
+  }
+}
 .composition__photo--p3 {
   top: 15.9rem;
   left: 11.2rem;
+}
+@media (max-width: 56.25em) {
+  .composition__photo--p3 {
+    top: -1.6rem;
+    left: 28%;
+  }
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.9302325581);
@@ -749,6 +769,7 @@ body {
 @media (max-width: 56.25em) {
   .row {
     max-width: 85.6rem;
+    padding: 0 3rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -817,13 +838,25 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 8rem 0;
+  padding: 6rem 4rem;
   font-size: 1.44rem;
   color: #fff;
 }
+@media (max-width: 56.25em) {
+  .footer {
+    padding: 4rem 0;
+  }
+}
 .footer__logo-box {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 6rem;
+}
+@media (max-width: 56.25em) {
+  .footer__logo-box {
+    margin-bottom: 3.2rem;
+  }
 }
 .footer__logo {
   width: 12.8rem;
@@ -1167,6 +1200,11 @@ main {
   height: 100%;
   padding: 6rem;
 }
+@media (max-width: 56.25em) {
+  .booking__form {
+    width: 66%;
+  }
+}
 .booking__solid-gradient {
   clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
   position: absolute;
@@ -1175,6 +1213,11 @@ main {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 56.25em) {
+  .booking__solid-gradient {
+    clip-path: polygon(0 0, 69.1% 0, 64.1% 100%, 0 100%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

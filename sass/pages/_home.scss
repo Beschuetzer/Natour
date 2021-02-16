@@ -58,6 +58,9 @@ main {
     height: 50rem;
     &__form {
         width: 50%;
+        @include respond(tab-port) {
+            width: 66%;
+        }
         height: 100%;
         padding: 6rem;
     }
@@ -70,6 +73,9 @@ main {
             //     transparent 100%),
             // url(../img/nat-10.jpg);
         clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+        @include respond(tab-port) {
+            clip-path: polygon(0 0, 69.1% 0, 64.1% 100%, 0 100%);
+        }
         position: absolute;
         top: 0;
         left: 0;
