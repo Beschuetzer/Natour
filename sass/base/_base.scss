@@ -18,8 +18,13 @@ html {
         font-size: 43.75%;
     }
     @include respond(phone) {
-        font-size: 1.0538vmin;
+        // font-size: 37.5%;
+        font-size: 1.15vmin;
+        // font-size: 1.0538vmin;
     }
+
+    //order to add media queries:
+    //base + typography > general + grid > page layout > components
 }
 /* everything related to font goes in body */
 body {
