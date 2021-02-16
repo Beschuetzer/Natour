@@ -15,6 +15,9 @@
         border-top: 1px solid $color-grey-dark;
         padding-top: $default-font-size;
         display: inline-block;
+        @include respond(tab-port) {
+            display: block;
+        }
     }
     &__link:link, &__link:visited {
         background-color: $color-grey-dark-3;
@@ -33,8 +36,10 @@
         transform: scale($story-scale * .85) rotate(-$skew-amount);
     }
     &__list {
-        list-style: none;  
-          
+        list-style: none; 
+        @include respond(tab-port) {
+            text-align: center;
+        }
     }
     &__item {
         display: inline-block;
@@ -48,5 +53,10 @@
        padding-top: $default-font-size;
        float: right;
        width: 72%;
+       @include respond(tab-port) {
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }

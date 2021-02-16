@@ -7,8 +7,12 @@
         height: $default-font-size * 4;
         width: $default-font-size * 4;
         position: fixed;
-        top: $default-font-size * 4;
-        right: $default-font-size * 4;
+        top: $default-font-size * 3.375;
+        right: $default-font-size * 3.875;
+        @include respond(tab-port) {
+            top: 2rem;
+            right: 2.5rem;
+        }
         // transform: translate(-50%, -50%);
         text-align: center;
         border-radius: 50%;
@@ -23,11 +27,15 @@
         background-color: $color-primary;
         height: $default-font-size * 3;
         width: $default-font-size * 3;
+        
         border-radius: 50%;
         position: fixed;
-        top: $default-font-size * 4.5;
-        right: $default-font-size * 4.5;
-        // transform: translate(-50%, -50%);
+        top: $default-font-size * 3.875;
+        right: $default-font-size * 4.375;
+        @include respond(tab-port) {
+            top: 2.9rem;
+            right: 3.3rem;
+        }
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
         @include navTransitionBackground;

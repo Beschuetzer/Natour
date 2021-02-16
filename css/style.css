@@ -177,17 +177,37 @@ body {
 .u-margin-top-small {
   margin-top: 1.6rem !important;
 }
+@media (max-width: 56.25em) {
+  .u-margin-top-small {
+    margin-top: 0.8rem !important;
+  }
+}
 
 .u-margin-top-medium {
   margin-top: 4rem !important;
+}
+@media (max-width: 56.25em) {
+  .u-margin-top-medium {
+    margin-top: 2rem !important;
+  }
 }
 
 .u-margin-top-large {
   margin-top: 8rem !important;
 }
+@media (max-width: 56.25em) {
+  .u-margin-top-large {
+    margin-top: 4rem !important;
+  }
+}
 
 .u-margin-top-huge {
   margin-top: 9.6rem !important;
+}
+@media (max-width: 56.25em) {
+  .u-margin-top-huge {
+    margin-top: 4.8rem !important;
+  }
 }
 
 .w-100 {
@@ -418,8 +438,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  bottom: 50%;
-  right: 0rem;
+  bottom: 50.7%;
 }
 .card__heading--1 {
   width: 44.5%;
@@ -727,14 +746,41 @@ body {
   clear: both;
   content: "";
 }
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 85.6rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .row {
+    margin: 0;
+    max-width: 100%;
+  }
+}
 .row:not(:last-child) {
   margin-bottom: 8rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
 }
 .row [class^=col-] {
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 1 * 6rem) / 2);
@@ -753,6 +799,20 @@ body {
 }
 .row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+.row--section-tours {
+  max-width: 114rem;
+}
+@media (max-width: 56.25em) {
+  .row--section-tours {
+    max-width: 44rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .row--section-tours {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .footer {
@@ -773,6 +833,11 @@ body {
   padding-top: 1.6rem;
   display: inline-block;
 }
+@media (max-width: 56.25em) {
+  .footer__navigation {
+    display: block;
+  }
+}
 .footer__link:link, .footer__link:visited {
   background-color: #333;
   color: #f7f7f7;
@@ -792,6 +857,11 @@ body {
 .footer__list {
   list-style: none;
 }
+@media (max-width: 56.25em) {
+  .footer__list {
+    text-align: center;
+  }
+}
 .footer__item {
   display: inline-block;
 }
@@ -804,6 +874,13 @@ body {
   float: right;
   width: 72%;
 }
+@media (max-width: 56.25em) {
+  .footer__copyright {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
 .navigation__checkbox {
   display: none;
@@ -813,8 +890,8 @@ body {
   height: 6.4rem;
   width: 6.4rem;
   position: fixed;
-  top: 6.4rem;
-  right: 6.4rem;
+  top: 5.4rem;
+  right: 6.2rem;
   text-align: center;
   border-radius: 50%;
   z-index: 1009;
@@ -825,20 +902,32 @@ body {
   -o-transition: transform 0.6s, width 0.8s, opacity 0.8s, box-shadow 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   cursor: pointer;
 }
+@media (max-width: 56.25em) {
+  .navigation__button {
+    top: 2rem;
+    right: 2.5rem;
+  }
+}
 .navigation__background {
   background-color: #55c57a;
   height: 4.8rem;
   width: 4.8rem;
   border-radius: 50%;
   position: fixed;
-  top: 7.2rem;
-  right: 7.2rem;
+  top: 6.2rem;
+  right: 7rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s, width 0.8s, opacity 0.8s, box-shadow 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   -webkit-transition: transform 0.8s, width 0.8s, opacity 0.8s, box-shadow 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   -moz-transition: transform 0.8s, width 0.8s, opacity 0.8s, box-shadow 0.8s cubic-bezier(0.83, 0, 0.17, 1);
   -o-transition: transform 0.8s, width 0.8s, opacity 0.8s, box-shadow 0.8s cubic-bezier(0.83, 0, 0.17, 1);
+}
+@media (max-width: 56.25em) {
+  .navigation__background {
+    top: 2.9rem;
+    right: 3.3rem;
+  }
 }
 .navigation__nav {
   height: 100vh;
@@ -1019,6 +1108,10 @@ body {
 }
 .popup__close:hover {
   color: #55c57a;
+}
+
+main {
+  background: #f7f7f7;
 }
 
 .sectionAbout {
