@@ -66,7 +66,7 @@ html {
 }
 @media (max-width: 37.5em) {
   html {
-    font-size: 1.15vmin;
+    font-size: 1.5vmin;
   }
 }
 
@@ -97,6 +97,11 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+}
+@media (max-width: 56.25em) {
+  .headingPrimary {
+    top: 30%;
+  }
 }
 .headingPrimary--main {
   display: block;
@@ -161,17 +166,37 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.6rem;
 }
+@media (max-width: 56.25em) {
+  .u-margin-bottom-small {
+    margin-bottom: 0.8rem;
+  }
+}
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem;
+}
+@media (max-width: 56.25em) {
+  .u-margin-bottom-medium {
+    margin-bottom: 2rem;
+  }
 }
 
 .u-margin-bottom-large {
   margin-bottom: 8rem;
 }
+@media (max-width: 56.25em) {
+  .u-margin-bottom-large {
+    margin-bottom: 4rem;
+  }
+}
 
 .u-margin-bottom-huge {
   margin-bottom: 9.6rem;
+}
+@media (max-width: 56.25em) {
+  .u-margin-bottom-huge {
+    margin-bottom: 4.8rem;
+  }
 }
 
 .u-margin-top-small {
@@ -380,6 +405,11 @@ body {
   -moz-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
 }
+@media (max-width: 56.25em) {
+  .feature-box {
+    padding: 1.6rem;
+  }
+}
 .feature-box__icon {
   font-size: 4.8rem;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -533,6 +563,12 @@ body {
   padding-left: 9.6rem;
   font-size: 1.6rem;
   transform: skewX(-7.2deg);
+}
+@media (max-width: 56.25em) {
+  .story {
+    padding: 3.2rem;
+    padding-left: 6.4rem;
+  }
 }
 .story__shape {
   position: relative;
@@ -700,8 +736,8 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   /* clip-path: polygon(
       0 0,
       50% 50%,
@@ -735,9 +771,14 @@ body {
       0 20%
   ); */
 }
+@media (max-width: 56.25em) {
+  .header {
+    height: 47.5vh;
+  }
+}
 @media (max-width: 37.5em) {
   .header {
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
 .header__logoBox {
@@ -755,6 +796,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+@media (max-width: 56.25em) {
+  .header__textBox {
+    top: 55%;
+  }
 }
 
 .row {
@@ -795,7 +841,7 @@ body {
 @media (max-width: 56.25em) {
   .row [class^=col-]:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 }
 @media (max-width: 56.25em) {
@@ -1107,7 +1153,7 @@ body {
 }
 .popup__right-side {
   width: 66.6666666667%;
-  padding: 2.8rem 6.4rem;
+  padding: 1.6rem 6.4rem;
 }
 .popup__photo {
   display: block;
@@ -1152,18 +1198,28 @@ main {
   padding: 25rem 0;
   margin-top: -26rem;
 }
+@media (max-width: 37.5em) {
+  .sectionAbout {
+    padding: 26.5rem 0 15.5rem 0;
+  }
+}
 
 .section-features {
   display: grid;
   place-content: center;
   margin-top: -14.4rem;
   position: relative;
-  height: 95vh;
+  height: auto;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   background-position: top;
   padding: 19.2rem 0;
   transform: skewY(-7.2deg);
+}
+@media (max-width: 56.25em) {
+  .section-features {
+    padding: 9.6rem 0;
+  }
 }
 .section-features > * {
   transform: skewY(7.2deg);
@@ -1181,10 +1237,20 @@ main {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 56.25em) {
+  .section-stories {
+    padding: 4rem 0 0 0;
+  }
+}
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+@media (max-width: 56.25em) {
+  .section-booking {
+    padding: 7.5rem 0;
+  }
 }
 
 .booking {
@@ -1195,6 +1261,11 @@ main {
   box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3);
   height: 50rem;
 }
+@media (max-width: 56.25em) {
+  .booking {
+    height: 43rem;
+  }
+}
 .booking__form {
   width: 50%;
   height: 100%;
@@ -1203,6 +1274,11 @@ main {
 @media (max-width: 56.25em) {
   .booking__form {
     width: 66%;
+  }
+}
+@media (max-width: 56.25em) {
+  .booking__form {
+    padding: 3rem;
   }
 }
 .booking__solid-gradient {
