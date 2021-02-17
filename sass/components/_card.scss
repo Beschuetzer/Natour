@@ -6,6 +6,7 @@
     height: 50rem;
     @include respond(tab-port) {
         height: auto;
+        box-shadow: 0 $default-font-size 2 * $default-font-size rgba($color-black, .15);
     }
 
     &__side{  
@@ -28,6 +29,7 @@
         @include respond(tab-port) {
             position: static;
             height: auto;
+            box-shadow: none;
         }
 
         &--back {
@@ -246,6 +248,7 @@
 
         @include respond(tab-port) {
             margin: 0;
+            font-size: $default-font-size * 3;
         }
     }
 }

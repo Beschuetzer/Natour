@@ -66,7 +66,7 @@ html {
 }
 @media (max-width: 37.5em) {
   html {
-    font-size: 1.5vmin;
+    font-size: 37.5%;
   }
 }
 
@@ -432,6 +432,7 @@ body {
 @media (max-width: 56.25em) {
   .card {
     height: auto;
+    box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.15);
   }
 }
 .card__side {
@@ -454,6 +455,7 @@ body {
   .card__side {
     position: static;
     height: auto;
+    box-shadow: none;
   }
 }
 .card__side--back {
@@ -651,6 +653,7 @@ body {
 @media (max-width: 56.25em) {
   .card__price-value {
     margin: 0;
+    font-size: 4.8rem;
   }
 }
 

@@ -18,8 +18,8 @@ html {
         font-size: 43.75%;
     }
     @include respond(phone) {
-        // font-size: 37.5%;
-        font-size: 1.5vmin;
+        font-size: 37.5%;
+        // font-size: 1.5vmin;
         // font-size: 1.0538vmin;
     }
 
