@@ -71,7 +71,7 @@ html {
 }
 @media (max-width: 25em) {
   html {
-    font-size: 1.5vmin;
+    font-size: 1.5038vmin;
   }
 }
 
@@ -766,6 +766,11 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 1.6rem;
 }
+@media (max-width: 25em) {
+  .form__group {
+    text-align: center;
+  }
+}
 .form__input {
   font-size: 1.6rem;
   padding: 1.6rem 2.4rem;
@@ -837,7 +842,7 @@ body {
   display: block;
   height: 3.2rem;
   width: 3.2rem;
-  border: 5px solid #55c57a;
+  border: 0.5rem solid #55c57a;
   border-radius: 50%;
 }
 .form__radio-button::after {
@@ -1404,7 +1409,7 @@ main {
   }
 }
 .booking__form {
-  width: 50%;
+  width: 55%;
   height: 100%;
   padding: 6rem;
 }
@@ -1418,6 +1423,11 @@ main {
     width: 66%;
   }
 }
+@media (max-width: 25em) {
+  .booking__form {
+    width: 100%;
+  }
+}
 .booking__solid-gradient {
   clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%);
   position: absolute;
@@ -1427,9 +1437,19 @@ main {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
+@media (max-width: 56.25em) {
+  .booking__solid-gradient {
+    clip-path: polygon(0 0, 65% 0, 55% 100%, 0 100%);
+  }
+}
 @media (max-width: 37.5em) {
   .booking__solid-gradient {
     clip-path: polygon(0 0, 71.66% 0, 61.66% 100%, 0 100%);
+  }
+}
+@media (max-width: 25em) {
+  .booking__solid-gradient {
+    clip-path: none;
   }
 }
 
