@@ -2,6 +2,7 @@
     @include clearfix;
     max-width: $grid-width;
     margin: 0 auto;
+
     @include respond(tab-port) {
         // max-width: 50%;
         max-width: 85.6rem;
@@ -11,7 +12,7 @@
         margin: 0;
         max-width: 100%;
     }
-
+    
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
         @include respond(tab-port) {
@@ -54,16 +55,17 @@
         width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 * #{$gutter-horizontal});
     }
     
-    &--section-tours {
+    &--section-tours, &--feature-box {
+        margin: 0 auto;
         max-width: 114rem;
         // max-width: 66%;
         // width: 57rem;
         @include respond(tab-port) {
-            max-width: 44rem;
+            max-width: 55rem;
         }
         @include respond(phone) {
-            max-width: 100%;
             width: 100%;
         }
     }
+
 }

@@ -16,14 +16,14 @@
 
         &:hover {
             transform: scale($img-scale-factor) translateY(-$default-font-size / 3);
-            @include respond(tab-port) {    
-                transform: scale($img-scale-factor * 1.5) translateY(-$default-font-size / 3);
-
-            }
             box-shadow: 0 $default-font-size * $img-scale-factor $default-font-size * 2.5 * $img-scale-factor rgba($color-black, .5);
             z-index: 20;
             outline: $default-font-size solid $color-primary-light;
             outline-offset: $default-font-size;
+            @include respond(tab-port) {    
+                transform: scale($img-scale-factor * 1.33) translateY(-$default-font-size / 3);
+                // left: 0;
+            }
         }
 
         &--p1 {

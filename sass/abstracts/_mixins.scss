@@ -36,6 +36,9 @@
 //1800+ (big desktop)
 
 @mixin respond($breakpoint) {
+    @if $breakpoint == small-font {
+        @media (max-width: 25em){@content;}   //600px
+    }
     @if $breakpoint == phone {
         @media (max-width: 37.5em){@content;}   //600px
     }

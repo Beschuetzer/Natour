@@ -6,13 +6,21 @@
     border-radius: $border-radius;
     padding: 4 * $default-font-size;
     padding-left: 6 * $default-font-size;
+    font-size: $default-font-size;
+    transform: skewX(-$skew-amount);
+
+
+
     @include respond(tab-port) {
         padding: 2 * $default-font-size;
         padding-left: 4 * $default-font-size;
     }
-    font-size: $default-font-size;
 
-    transform: skewX(-$skew-amount);
+    @include respond(phone) {
+        width: 100%;
+        transform: skewX(0);
+        max-width: 66rem;
+    }
 
     &__shape {
         position: relative;
@@ -28,7 +36,9 @@
 
         clip-path: circle(50% at 50% 50%);
         transform: translate(-2 * $default-font-size , 0) skewX($skew-amount);
-      
+        @include respond(phone) {
+            transform: translate(-2 * $default-font-size , 0) skewX(0);
+        }
     }
 
     &__image {
@@ -43,6 +53,9 @@
 
     &__text {
         transform: skewX($skew-amount);
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
 
     &__caption {
