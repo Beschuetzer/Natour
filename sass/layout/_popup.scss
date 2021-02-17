@@ -54,6 +54,7 @@
         @include respond(tab-port) {
             width: 100%;
             padding: 3.2rem 6.4rem;
+            text-align: center;
         }
     }
     &__photo {
