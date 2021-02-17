@@ -1012,6 +1012,11 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 56.25em) {
+  .row--footer, .row--booking {
+    max-width: 100%;
+  }
+}
 
 .footer {
   background-color: #333;
@@ -1376,7 +1381,7 @@ main {
 }
 
 .section-booking {
-  padding: 15rem 0;
+  padding: 15rem 1rem;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
 @media (max-width: 56.25em) {
@@ -1406,16 +1411,15 @@ main {
 @media (max-width: 56.25em) {
   .booking__form {
     padding: 3rem;
-    width: 66%;
   }
 }
 @media (max-width: 37.5em) {
   .booking__form {
-    width: 75%;
+    width: 66%;
   }
 }
 .booking__solid-gradient {
-  clip-path: polygon(0 0, 55% 0, 45% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -1423,14 +1427,9 @@ main {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
 }
-@media (max-width: 56.25em) {
-  .booking__solid-gradient {
-    clip-path: polygon(0 0, 69.1% 0, 64.16% 100%, 0 100%);
-  }
-}
 @media (max-width: 37.5em) {
   .booking__solid-gradient {
-    clip-path: polygon(0 0, 77.5% 0, 72.5% 100%, 0 100%);
+    clip-path: polygon(0 0, 71.66% 0, 61.66% 100%, 0 100%);
   }
 }
 

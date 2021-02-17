@@ -68,4 +68,9 @@
         }
     }
 
+    &--footer, &--booking {
+        @include respond(tab-port) {
+            max-width:  100%;
+        }
+    }
 }
