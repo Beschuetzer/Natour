@@ -563,7 +563,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .card__heading--2 {
-    width: 31.5%;
+    width: 40.5%;
   }
 }
 .card__heading--3 {
@@ -1272,7 +1272,8 @@ body {
 }
 .popup__content {
   background-color: #eee;
-  width: 75%;
+  max-width: 95%;
+  width: 114rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1290,12 +1291,30 @@ body {
   -moz-transition: transform 0.66s 0.16s, opacity 0.66s 0.16s ease;
   -o-transition: transform 0.66s 0.16s, opacity 0.66s 0.16s ease;
 }
+@media (max-width: 56.25em) {
+  .popup__content {
+    flex-direction: column-reverse;
+  }
+}
 .popup__left-side {
   width: 33.3333333333%;
+}
+@media (max-width: 56.25em) {
+  .popup__left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .popup__right-side {
   width: 66.6666666667%;
   padding: 1.6rem 6.4rem;
+}
+@media (max-width: 56.25em) {
+  .popup__right-side {
+    width: 100%;
+    padding: 3.2rem 6.4rem;
+  }
 }
 .popup__photo {
   display: block;

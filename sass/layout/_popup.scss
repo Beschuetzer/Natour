@@ -17,8 +17,8 @@
 
     &__content {
         background-color: $color-grey-light-2;
-        // height: 75%;
-        width: 75%;
+        max-width: 95%;
+        width: 114rem;
         @include positionCenter;
         box-shadow: 0 $default-font-size $default-font-size * 2 rgba($color-black, .9);
         border-radius: .3rem;
@@ -34,18 +34,27 @@
         -webkit-transition: transform .66s .16s, opacity .66s .16s ease;
         -moz-transition: transform .66s .16s, opacity .66s .16s ease;
         -o-transition: transform .66s .16s, opacity .66s .16s ease;
+
+        @include respond(tab-port) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__left-side {
         width: 33.3333333333333333333333%;
-        // display: table-cell;
-        // vertical-align: middle;
+        @include respond(tab-port) {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
     }
     &__right-side {
         width: 66.6666666666666666666667%;
         padding: $default-font-size $default-font-size * 4;
-        // display: table-cell;
-        // vertical-align: middle;
+        @include respond(tab-port) {
+            width: 100%;
+            padding: 3.2rem 6.4rem;
+        }
     }
     &__photo {
         display: block;

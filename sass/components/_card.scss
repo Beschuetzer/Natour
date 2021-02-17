@@ -126,16 +126,19 @@
     }   
 
     &__heading {
+        
         font-size: 2.5rem;
         font-weight: 300;
         text-transform: uppercase;
         color: #fff;
         position: absolute;
+        bottom: 50.7%;
+
+        
         @include respond(tab-port) {
             right: 0;
             top: 14.6%;
         }
-        bottom: 50.7%;
 
         &--1 {
             width: 44.5%;
@@ -146,7 +149,7 @@
         &--2 {
             width: 51.5%;
             @include respond(tab-port) {
-                width: 31.5%;
+                width: 40.5%;
             }
         }
         &--3 {
@@ -161,6 +164,7 @@
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
+        
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
             @include respond(tab-port) {
