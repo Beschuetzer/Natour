@@ -342,6 +342,11 @@ body {
     height: 25rem;
   }
 }
+@media (max-width: 37.5em) {
+  .composition {
+    height: 39vw;
+  }
+}
 .composition__photo {
   width: 52.5%;
   box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.33);
@@ -1046,7 +1051,7 @@ body {
   }
 }
 .footer__logo {
-  width: 12.8rem;
+  width: 15rem;
 }
 .footer__navigation {
   border-top: 1px solid #777;

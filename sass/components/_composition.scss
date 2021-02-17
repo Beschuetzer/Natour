@@ -3,6 +3,9 @@
     @include respond(tab-port) {
         height: 25rem;
     }
+    @include respond(phone) {
+        height: 39vw;
+    }
 
     &__photo {
         width: 52.5%;
