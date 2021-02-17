@@ -23,6 +23,21 @@
     @include respond(phone) {
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
+
+    @media (min-resolution: 192dpi) and (max-width: 37.5em) {
+        background-image: linear-gradient(
+            to right bottom,
+             rgba($color-primary-light, 0.8),
+             rgba($color-primary-dark, 0.8)), 
+             url('../img/hero-small.jpg');
+    }
+    @media (max-resolution: 191dpi) and (max-width: 75em) {
+        background-image: linear-gradient(
+            to right bottom,
+             rgba($color-primary-light, 0.8),
+             rgba($color-primary-dark, 0.8)), 
+             url('../img/hero-small.jpg');
+    }
    
     /* clip-path: polygon(
         0 0,
