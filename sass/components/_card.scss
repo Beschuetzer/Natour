@@ -61,6 +61,9 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
+        @include respond(tab-port) {
+            transform: rotateY(0deg);
+        }
     }
     &:hover &__side--back {
         transform: rotateY(0deg);
@@ -127,31 +130,28 @@
         color: #fff;
         position: absolute;
         @include respond(tab-port) {
-            // position: static;
-            // width: 100%;
-            top: 19.9%;
+            right: 0;
+            top: 14.6%;
         }
         bottom: 50.7%;
-        // right: 0rem;
-        
 
         &--1 {
             width: 44.5%;
-            // @include respond(tab-port) {
-            //     width: 100%;
-            // }
+            @include respond(tab-port) {
+                width: 28.5%;
+            }
         }
         &--2 {
             width: 51.5%;
-            // @include respond(tab-port) {
-            //     width: 100%;
-            // }
+            @include respond(tab-port) {
+                width: 31.5%;
+            }
         }
         &--3 {
             width: 55.8%;
-            // @include respond(tab-port) {
-            //     width: 100%;
-            // }
+            @include respond(tab-port) {
+                width: 37.8%;
+            }
         }
     }
 
@@ -213,6 +213,9 @@
     &__cta {
         // Flex-box centering
         padding: 3.2rem;
+        @include respond(tab-port) {
+            padding-top: 4.2rem;
+        }
         height: 100%;
         display: flex;
         flex-direction: column;

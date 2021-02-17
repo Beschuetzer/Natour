@@ -484,6 +484,11 @@ body {
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
+@media (max-width: 56.25em) {
+  .card:hover .card__side--front {
+    transform: rotateY(0deg);
+  }
+}
 .card:hover .card__side--back {
   transform: rotateY(0deg);
 }
@@ -529,17 +534,33 @@ body {
 }
 @media (max-width: 56.25em) {
   .card__heading {
-    top: 19.9%;
+    right: 0;
+    top: 14.6%;
   }
 }
 .card__heading--1 {
   width: 44.5%;
 }
+@media (max-width: 56.25em) {
+  .card__heading--1 {
+    width: 28.5%;
+  }
+}
 .card__heading--2 {
   width: 51.5%;
 }
+@media (max-width: 56.25em) {
+  .card__heading--2 {
+    width: 31.5%;
+  }
+}
 .card__heading--3 {
   width: 55.8%;
+}
+@media (max-width: 56.25em) {
+  .card__heading--3 {
+    width: 37.8%;
+  }
 }
 .card__heading-span {
   padding: 1rem 1.5rem;
@@ -609,6 +630,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 56.25em) {
+  .card__cta {
+    padding-top: 4.2rem;
+  }
 }
 .card__price-box {
   color: #fff;
