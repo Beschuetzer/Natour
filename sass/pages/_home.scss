@@ -16,11 +16,6 @@ main {
     margin-top: -14.4rem;
     position: relative;
     height: auto;
-    background-image: linear-gradient(
-        to right bottom,
-         rgba($color-primary-light, 0.8),
-         rgba($color-primary-dark, 0.8)), 
-         url('../img/nat-4.jpg');
     background-size: cover;
     background-position: top;
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
@@ -33,7 +28,29 @@ main {
     & > * {
         transform: skewY($skew-amount);
     }
-  
+
+    background-image: linear-gradient(
+        to right bottom,
+         rgba($color-primary-light, 0.8),
+         rgba($color-primary-dark, 0.8)), 
+         url('../img/nat-4.jpg');
+
+    @media (min-resolution: 192dpi) and (max-width: 25em),
+    (max-width: 50em) and (max-resolution: 191dpi) {
+        background-image: linear-gradient(
+        to right bottom,
+         rgba($color-primary-light, 0.8),
+         rgba($color-primary-dark, 0.8)), 
+         url('../img/nat-medium-4.jpg');
+    }
+    @media (min-resolution: 192dpi) and (max-width: 12.5em),
+    (max-width: 25em) and (max-resolution: 191dpi) {
+        background-image: linear-gradient(
+        to right bottom,
+         rgba($color-primary-light, 0.8),
+         rgba($color-primary-dark, 0.8)), 
+         url('../img/nat-small-4.jpg');
+    }
 }
 
 .section-tours {
@@ -61,13 +78,22 @@ main {
 }
 .booking {
     position: relative;
-    background-image: url(../img/nat-10.jpg);
-    
     background-size: cover;
     border-radius: $border-radius;
     box-shadow: 0 $default-font-size 2.5 * $default-font-size rgba($color-black, .3);
-    
     height: 50rem;
+    background-image: url(../img/nat-10.jpg);
+
+    @media (min-resolution: 192dpi) and (max-width: 25em),
+    (max-width: 50em) and (max-resolution: 191dpi) {
+        background-image:  url(../img/nat-medium-10.jpg);
+    }
+    @media (min-resolution: 192dpi) and (max-width: 12.5em),
+    (max-width: 25em) and (max-resolution: 191dpi) {
+        background-image:  url(../img/nat-small-10.jpg);
+    }
+
+
     @include respond(tab-port) {
         height: 43rem;
     }

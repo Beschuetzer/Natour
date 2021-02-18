@@ -535,11 +535,41 @@ body {
 .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
 }
+@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+  .card__picture--1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-medium-5.jpg");
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+  .card__picture--1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-small-5.jpg");
+  }
+}
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg");
 }
+@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+  .card__picture--2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-medium-6.jpg");
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+  .card__picture--2 {
+    background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-small-6.jpg");
+  }
+}
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg");
+}
+@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+  .card__picture--3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-medium-7.jpg");
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+  .card__picture--3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-small-7.jpg");
+  }
 }
 .card__heading {
   font-size: 2.5rem;
@@ -922,12 +952,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 37.5em) {
-  .header {
-    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
-  }
-}
-@media (max-resolution: 191dpi) and (max-width: 75em) {
+@media (min-resolution: 192dpi) and (max-width: 37.5em), (max-resolution: 191dpi) and (max-width: 75em) {
   .header {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   }
@@ -1387,11 +1412,11 @@ main {
   margin-top: -14.4rem;
   position: relative;
   height: auto;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   background-position: top;
   padding: 19.2rem 0;
   transform: skewY(-7.2deg);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
 }
 @media (max-width: 56.25em) {
   .section-features {
@@ -1400,6 +1425,16 @@ main {
 }
 .section-features > * {
   transform: skewY(7.2deg);
+}
+@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+  .section-features {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-medium-4.jpg");
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+  .section-features {
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-small-4.jpg");
+  }
 }
 
 .section-tours {
@@ -1432,11 +1467,21 @@ main {
 
 .booking {
   position: relative;
-  background-image: url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 0.3rem;
   box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.3);
   height: 50rem;
+  background-image: url(../img/nat-10.jpg);
+}
+@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+  .booking {
+    background-image: url(../img/nat-medium-10.jpg);
+  }
+}
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+  .booking {
+    background-image: url(../img/nat-small-10.jpg);
+  }
 }
 @media (max-width: 56.25em) {
   .booking {
