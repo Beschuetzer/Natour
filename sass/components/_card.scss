@@ -4,7 +4,8 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
         height: auto;
         box-shadow: 0 $default-font-size 2 * $default-font-size rgba($color-black, .15);
     }
@@ -26,7 +27,8 @@
         border-radius: 1rem;
         box-shadow: 0 $default-font-size 2 * $default-font-size rgba($color-black, .15);
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
             position: static;
             height: auto;
             box-shadow: none;
@@ -34,7 +36,8 @@
 
         &--back {
             transform: rotateY(-180deg);
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 transform: rotate(0);
                 border-radius: 0 0 1rem 1rem;
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -45,16 +48,15 @@
             }
             &-2{
                 background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
-
             }
             &-3{
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
-
             }
         }
 
         &--front {
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 border-radius: 1rem 1rem 0 0;
             }
         }
@@ -63,7 +65,8 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             transform: rotateY(0deg);
         }
     }
@@ -78,7 +81,8 @@
         background-blend-mode: screen;
         height: 50%;
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             height: 25rem;
         }
 
@@ -97,7 +101,8 @@
             );
             border-radius: .3rem;
 
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 -webkit-clip-path: polygon(
                 0 0,
                 100% 0,
@@ -172,12 +177,13 @@
         text-transform: uppercase;
         color: #fff;
         position: absolute;
-        bottom: 50.7%;
+        bottom: 52.1%;
 
         
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             right: 0;
-            top: 14.6%;
+            top: 15%;
         }
 
         &--1 {
@@ -188,6 +194,9 @@
         }
         &--2 {
             width: 51.5%;
+            @media (hover: none) {
+                width: 56.5%;
+            }
             @include respond(tab-port) {
                 width: 40.5%;
             }
@@ -207,7 +216,8 @@
         
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 width: 100%;    
                 text-align: center; 
                 display: inline-block;  
@@ -215,7 +225,8 @@
         }
         &--2{
             background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 width: 100%;    
                 text-align: center; 
                 display: inline-block;  
@@ -223,7 +234,8 @@
         }
         &--3{
             background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
-            @include respond(tab-port) {
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
                 width: 100%;    
                 text-align: center; 
                 display: inline-block;  
@@ -250,7 +262,8 @@
                 }
             }
         }
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             padding-bottom: $default-font-size * 4;
         }
     }
@@ -259,7 +272,8 @@
     &__cta {
         // Flex-box centering
         padding: 3.2rem;
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             padding-top: 4.2rem;
         }
         height: 100%;
@@ -290,7 +304,8 @@
         font-weight: 100;
         margin-bottom: $default-font-size * 4;
 
-        @include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
             margin: 0;
             font-size: $default-font-size * 3;
         }
