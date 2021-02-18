@@ -27,17 +27,21 @@
         text-align: center;
         height: 15rem;
         width: 15rem;
-        float:left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-
-        -webkit-clip-path: circle(50% at 50% 50%);
+        float: left;
         overflow: hidden;
-
-        clip-path: circle(50% at 50% 50%);
+        border-radius: 50%;
         transform: translate(-2 * $default-font-size , 0) skewX($skew-amount);
+
         @include respond(phone) {
             transform: translate(-2 * $default-font-size , 0) skewX(0);
+        }
+
+        @supports((clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%))) {
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            border-radius: none;
         }
     }
 

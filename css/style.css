@@ -732,16 +732,22 @@ body {
   height: 15rem;
   width: 15rem;
   float: left;
-  -webkit-shape-outside: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
-  -webkit-clip-path: circle(50% at 50% 50%);
   overflow: hidden;
-  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
   transform: translate(-3.2rem, 0) skewX(7.2deg);
 }
 @media (max-width: 37.5em) {
   .story__shape {
     transform: translate(-3.2rem, 0) skewX(0);
+  }
+}
+@supports (clip-path: circle(50% at 50% 50%)) or (-webkit-clip-path: circle(50% at 50% 50%)) {
+  .story__shape {
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    border-radius: none;
   }
 }
 .story__image {
@@ -903,13 +909,11 @@ body {
 
 .header {
   position: relative;
-  height: 95vh;
+  height: 80vh;
   min-height: 50rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   /* clip-path: polygon(
       0 0,
       50% 50%,
@@ -942,6 +946,13 @@ body {
       50% 50%,
       0 20%
   ); */
+}
+@supports (clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)) or (-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)) {
+  .header {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
 }
 @media (max-width: 56.25em) {
   .header {
