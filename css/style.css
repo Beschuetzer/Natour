@@ -535,12 +535,12 @@ body {
 .card__picture--1 {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
 }
-@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 25em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi), (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--1 {
     background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-medium-5.jpg");
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi), (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--1 {
     background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-small-5.jpg");
   }
@@ -548,12 +548,12 @@ body {
 .card__picture--2 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg");
 }
-@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 25em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi), (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--2 {
     background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-medium-6.jpg");
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi), (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--2 {
     background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-small-6.jpg");
   }
@@ -561,12 +561,12 @@ body {
 .card__picture--3 {
   background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg");
 }
-@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 25em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi), (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--3 {
     background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-medium-7.jpg");
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi), (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .card__picture--3 {
     background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-small-7.jpg");
   }
@@ -953,7 +953,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 37.5em), (max-resolution: 191dpi) and (max-width: 75em) {
+@media (min-resolution: 192dpi) and (max-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 37.5em), (max-resolution: 191dpi) and (max-width: 75em), (-webkit-max-device-pixel-ratio: 1.99) and (max-width: 75em) {
   .header {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   }
@@ -1296,7 +1296,6 @@ body {
 }
 
 .popup {
-  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -1310,6 +1309,14 @@ body {
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
   -o-transition: all 0.75s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@supports (backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem)) {
+  .popup {
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    background-color: rgba(0, 0, 0, 0.33);
+  }
 }
 .popup__content {
   background-color: #eee;
@@ -1427,12 +1434,12 @@ main {
 .section-features > * {
   transform: skewY(7.2deg);
 }
-@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 25em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi), (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .section-features {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-medium-4.jpg");
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi), (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .section-features {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-small-4.jpg");
   }
@@ -1474,12 +1481,12 @@ main {
   height: 50rem;
   background-image: url(../img/nat-10.jpg);
 }
-@media (min-resolution: 192dpi) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 25em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em), (max-width: 50em) and (max-resolution: 191dpi), (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .booking {
     background-image: url(../img/nat-medium-10.jpg);
   }
 }
-@media (min-resolution: 192dpi) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi) {
+@media (min-resolution: 192dpi) and (max-width: 12.5em), (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em), (max-width: 25em) and (max-resolution: 191dpi), (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
   .booking {
     background-image: url(../img/nat-small-10.jpg);
   }

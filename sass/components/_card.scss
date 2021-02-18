@@ -118,36 +118,48 @@
             background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-5.jpg');
            
             @media (min-resolution: 192dpi) and (max-width: 25em),
-            (max-width: 50em) and (max-resolution: 191dpi)
-             {
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em),
+            (max-width: 50em) and (max-resolution: 191dpi),
+            (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99)
+            {
                  background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-medium-5.jpg');
             }
             @media (min-resolution: 192dpi) and (max-width: 12.5em),
-            (max-width: 25em) and (max-resolution: 191dpi) {
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em),
+            (max-width: 25em) and (max-resolution: 191dpi),
+            (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
                  background-image:  linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../img/nat-small-5.jpg');
             }
         }
         &--2 {
             background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../img/nat-6.jpg');
-            @media (min-resolution: 192dpi) and (max-width: 25em),
-            (max-width: 50em) and (max-resolution: 191dpi)
-             {
+             @media (min-resolution: 192dpi) and (max-width: 25em),
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em),
+            (max-width: 50em) and (max-resolution: 191dpi),
+            (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99)
+            {
                  background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../img/nat-medium-6.jpg');
             }
             @media (min-resolution: 192dpi) and (max-width: 12.5em),
-            (max-width: 25em) and (max-resolution: 191dpi) {
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em),
+            (max-width: 25em) and (max-resolution: 191dpi),
+            (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
                  background-image:  linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../img/nat-small-6.jpg');
             }
         }
         &--3 {
             background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('../img/nat-7.jpg');
             @media (min-resolution: 192dpi) and (max-width: 25em),
-            (max-width: 50em) and (max-resolution: 191dpi)
-             {
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 25em),
+            (max-width: 50em) and (max-resolution: 191dpi),
+            (max-width: 50em) and (-webkit-max-device-pixel-ratio: 1.99)
+            {
                  background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('../img/nat-medium-7.jpg');
             }
             @media (min-resolution: 192dpi) and (max-width: 12.5em),
-            (max-width: 25em) and (max-resolution: 191dpi) {
+            (-webkit-min-device-pixel-ratio: 2) and (max-width: 12.5em),
+            (max-width: 25em) and (max-resolution: 191dpi),
+            (max-width: 25em) and (-webkit-max-device-pixel-ratio: 1.99) {
                  background-image:  linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('../img/nat-small-7.jpg');
             }
         }

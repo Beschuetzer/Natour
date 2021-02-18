@@ -1,5 +1,4 @@
 .popup {
-    background-color: rgba($color-black, .8);
     position: fixed;
     top: 0;
     left: 0;
@@ -14,6 +13,14 @@
     -webkit-transition: all .75s ease;
     -moz-transition: all .75s ease;
     -o-transition: all .75s ease;
+
+    background-color: rgba($color-black, .8);
+
+    @supports((backdrop-filter: blur(1rem)) or (-webkit-backdrop-filter: blur(1rem))) {
+        backdrop-filter: blur(1rem);
+        -webkit-backdrop-filter: blur(1rem);
+        background-color: rgba($color-black, .33);
+    }
 
     &__content {
         background-color: $color-grey-light-2;

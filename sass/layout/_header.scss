@@ -26,7 +26,9 @@
     }
 
     @media (min-resolution: 192dpi) and (max-width: 37.5em),
-    (max-resolution: 191dpi) and (max-width: 75em) {
+    (-webkit-min-device-pixel-ratio: 2) and (max-width: 37.5em),
+    (max-resolution: 191dpi) and (max-width: 75em),
+    (-webkit-max-device-pixel-ratio: 1.99) and (max-width: 75em) {
         background-image: linear-gradient(
             to right bottom,
              rgba($color-primary-light, 0.8),
