@@ -24,8 +24,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 
-    @media (min-resolution: 192dpi) and (max-width: 37.5em),
-    (-webkit-min-device-pixel-ratio: 2) and (max-width: 37.5em),
+    @media only screen and (min-resolution: 192dpi) and (max-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 37.5em),
     (max-resolution: 191dpi) and (max-width: 75em),
     (-webkit-max-device-pixel-ratio: 1.99) and (max-width: 75em) {
         background-image: linear-gradient(
